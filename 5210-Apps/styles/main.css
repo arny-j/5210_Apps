@@ -1,0 +1,52 @@
+body {
+    /* Sets the font for the entire page */
+    font-family: Arial, Helvetica, sans-serif;
+    
+    /* flexbox layout */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* full veiwport height */
+
+    background-color: #f4f4f9;
+    margin: 0;
+
+}
+
+.container {
+    background-color: white;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="number"] {
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;  
+}
+
+#result {
+    font-size: 18px;
+    margin-top: 20px;
+}
