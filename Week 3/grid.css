@@ -1,0 +1,59 @@
+/* Average out all size values */
+* {
+    box-sizing: border-box; 
+}
+
+/* Universal Font */
+html {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+/* Body Styles */
+body {
+    /* Centers all content on page */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+/* setup the grid collumns */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/* rules inside each column */
+[class*="col"] {
+    float: left;
+    padding: 10px;
+    background-color: rgb(219, 219, 219);
+    border-style: solid;
+    text-align: center;
+}
+
+/* set row rules (set row first then columns) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+    margin-bottom: 10px;
+}
+
+/* Rule for fluid images */
+img {
+    max-width: 90%;
+    height: auto;
+    margin: auto;
+}
+
+/* Flip image in x-axis */
+.img_flip {
+    transform: scaleX(-1);
+}
